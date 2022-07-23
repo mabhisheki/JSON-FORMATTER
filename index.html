@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>JSON Formatter with JS</title>
+       <link rel="stylesheet" href="src/main.css">
+       <script src="src/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <textarea class="large-area large-area--input" placeholder="Enter your json here..">{"id":"0001",
+                "type":"donut",
+                "name":"Cake",
+                "ppu":0.55,
+                "batters":
+                {"batter":[
+                 {"id": 1001, "type":"Regular"},
+                 {"id": 1002, "type":"Chocolate"},
+                 {"id": 1003, "type":"Blueberry"},
+                 {"id": 1004, "type":"Devil's Food"},
+    
+                ]};
+    
+                "toping":
+                [
+                {"id": 5001, "type":"None"},
+                {"id": 5002, "type":"Glazed"},
+                {"id": 5005, "type":"Sugar"},
+                {"id": 5007, "type":"Powdered Sugar"},{"id": 5006, "type":"Chocolate with sprinkles":},{"id":5003, "type":"Chocolate"},{"id": 5004, "type":"Maple"},
+    
+                ]
+    
+    
+    
+            }</textarea>
+            <div class="controls">
+                <button type="button" class="controls__button controls__butto--format">Format JSON</button>
+                <button type="button" class="controls__button controls__butto--clear">Clear Data</button>
+            </div>
+            <textarea class="large-area large-area--output" placeholder="your json will appear here..">{
+                "id":"0001",
+                "type":"donut",
+                "name":"Cake",
+                "ppu":0.55,
+                "batters":{
+                    "batter":[<=>]
+                        "toping":[
+                {
+                "id": 5001
+                "type":"None"
+                    },
+                {
+                "id": 5002
+                "type":"Glazed"
+                 },
+                {
+                "id": 5005, 
+                "type":"Sugar"},
+                {
+                "id": 5007, 
+                "type":"Powdered Sugar"
+                }, 
+                {
+                "id": 5006,
+                 "type":"Chocolate with sprinkles"
+                },
+                {
+                "id":5003,
+                "type":"Chocolate"
+                ]
+                };</textarea>
+            
+        </div>
+    </body>
+</html>
